@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [date, setDate] = useState('');
     const [selectedSlot, setSelectedSlot] = useState(null);
   
     const handleSlotSelection = (slot) => {
@@ -37,6 +38,24 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
             onChange={(e) => setPhoneNumber(e.target.value)}
             required
           />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="date">Date of Appointment:</label>
+          <input
+            type="date"
+            id="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="date">Book Time Slot:</label>
+          <select name="timeSlot" id="tslot">
+  <option value="select a time slot">select a time slot</option>
+</select>
         </div>
         <button type="submit">Book Now</button>
       </form>
