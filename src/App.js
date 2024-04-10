@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar.js'
 import Landing from './Landing_Page/LandingPage.js';
 import SignUp from './SignUp/SignUp.js';
 import Login from './Login/Login.js';
+import InstantConsultation from './InstantConsultationBooking/InstantConsultation.js';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
               <Route path="/" element={<Landing/>}/>
               <Route path="/signup" element={<SignUp/>}/>
               <Route path="/login" element={<Login/>}/>
+              <Route path="/ic" element={<InstantConsultation/>}/>
               </Routes>
             
         </BrowserRouter>
