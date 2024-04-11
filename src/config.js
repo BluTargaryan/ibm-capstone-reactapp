@@ -1,4 +1,4 @@
-export const API_URL = window.location.hostname === "localhost" ? "https://opeyemiyolo-8181.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/" : "add your theia server side url";
+export const API_URL = window.location.hostname === "localhost" ? "http://localhost:8181" : "https://stayhealthy-server.vercel.app";
 console.log(
     "API_URL :",
     API_URL
